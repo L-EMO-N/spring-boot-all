@@ -1,0 +1,33 @@
+
+
+/**
+    用于补充hui的css
+ */
+
+ .input-com{
+     box-sizing: border-box;
+     border: none;
+     border-bottom: solid 1px;
+     width: 100px;
+     font-size: 14px;
+     height: 31px;
+     line-height: 1.42857;
+     padding: 4px;
+
+ }
+
+.select-box-overried{
+    border: solid 1px #ddd;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: inline-block;
+}
+.select-overried{
+    border: solid 1px #ddd;
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: normal;
+    font-weight: normal;
+    width: 100%;
+    white-space: nowrap;
+}

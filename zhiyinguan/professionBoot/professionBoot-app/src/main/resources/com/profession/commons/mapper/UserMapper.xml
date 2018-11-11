@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.profession.commons.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.profession.commons.beans.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="sex" jdbcType="BIT" property="sex" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="identity" jdbcType="BIT" property="identity" />
+    <result column="head_portrait" jdbcType="VARCHAR" property="headPortrait" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="mail" jdbcType="VARCHAR" property="mail" />
+    <result column="qq" jdbcType="VARCHAR" property="qq" />
+    <result column="wechat" jdbcType="VARCHAR" property="wechat" />
+    <result column="platform_id" jdbcType="VARCHAR" property="platformId" />
+    <result column="platform_type" jdbcType="VARCHAR" property="platformType" />
+    <result column="unionid" jdbcType="VARCHAR" property="unionid" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    user_id, user_name, password, nickname, sex, birthday, identity, head_portrait, phone, 
+    mail, qq, wechat, platform_id, platform_type, unionid, create_time, update_time
+  </sql>
+</mapper>

@@ -1,0 +1,261 @@
+20180703_10:17:43.723 [main] [5524]     [    ] Starting ProfessionApplication on chenmindeMacBook-Air.local with PID 3022 (/Users/chenmin/projects/professionBoot/code/professionBoot/professionBoot-app/target/classes started by chenmin in /Users/chenmin/projects/professionBoot/code/professionBoot/professionBoot-app)
+20180703_10:17:43.854 [main] [5655]     [    ] The following profiles are active: prod
+20180703_10:17:44.199 [main] [6000]     [    ] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@478abae0: startup date [Tue Jul 03 10:17:44 CST 2018]; root of context hierarchy
+20180703_10:17:49.721 [main] [11522]     [    ] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$88fc2cd0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20180703_10:17:51.522 [main] [13323]     [    ] Tomcat initialized with port(s): 8081 (http)
+20180703_10:17:51.586 [main] [13387]     [    ] Starting service [Tomcat]
+20180703_10:17:51.589 [main] [13390]     [    ] Starting Servlet Engine: Apache Tomcat/8.5.23
+20180703_10:17:51.991 [localhost-startStop-1] [13792]     [    ] Initializing Spring embedded WebApplicationContext
+20180703_10:17:51.996 [localhost-startStop-1] [13797]     [    ] Root WebApplicationContext: initialization completed in 7798 ms
+20180703_10:17:53.678 [localhost-startStop-1] [15479]     [    ] Mapping servlet: 'statViewServlet' to [/druid/*]
+20180703_10:17:53.693 [localhost-startStop-1] [15494]     [    ] Mapping servlet: 'dispatcherServlet' to [/]
+20180703_10:17:53.704 [localhost-startStop-1] [15505]     [    ] Mapping filter: 'metricsFilter' to: [/*]
+20180703_10:17:53.705 [localhost-startStop-1] [15506]     [    ] Mapping filter: 'characterEncodingFilter' to: [/*]
+20180703_10:17:53.706 [localhost-startStop-1] [15507]     [    ] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20180703_10:17:53.706 [localhost-startStop-1] [15507]     [    ] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20180703_10:17:53.707 [localhost-startStop-1] [15508]     [    ] Mapping filter: 'requestContextFilter' to: [/*]
+20180703_10:17:53.707 [localhost-startStop-1] [15508]     [    ] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+20180703_10:17:53.708 [localhost-startStop-1] [15509]     [    ] Mapping filter: 'webStatFilter' to urls: [/*]
+20180703_10:17:53.709 [localhost-startStop-1] [15510]     [    ] Mapping filter: 'applicationContextIdFilter' to: [/*]
+20180703_10:17:54.955 [main] [16756]     [    ] load filter error, filter not found : static
+20180703_10:17:58.775 [main] [20576]     [    ] {dataSource-1} inited
+20180703_10:17:59.003 [main] [20804]     [    ] Building JPA container EntityManagerFactory for persistence unit 'default'
+20180703_10:17:59.072 [main] [20873]     [    ] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20180703_10:17:59.557 [main] [21358]     [    ] HHH000412: Hibernate Core {5.0.12.Final}
+20180703_10:17:59.561 [main] [21362]     [    ] HHH000206: hibernate.properties not found
+20180703_10:17:59.567 [main] [21368]     [    ] HHH000021: Bytecode provider name : javassist
+20180703_10:17:59.881 [main] [21682]     [    ] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20180703_10:18:00.641 [main] [22442]     [    ] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20180703_10:18:01.600 [main] [23401]     [    ] HHH000228: Running hbm2ddl schema update
+20180703_10:18:01.828 [main] [23629]     [    ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+20180703_10:18:05.182 [main] [26983]     [    ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/chenmin/Desktop/maven-repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/chenmin/Desktop/maven-repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcConversionService' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.format.support.FormattingConversionService]: Factory method 'mvcConversionService' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.profession.commons.beans.User
+20180703_10:18:05.186 [main] [26987]     [    ] Closing JPA EntityManagerFactory for persistence unit 'default'
+20180703_10:18:05.197 [main] [26998]     [    ] {dataSource-1} closed
+20180703_10:18:05.205 [main] [27006]     [    ] Stopping service [Tomcat]
+20180703_10:18:05.262 [main] [27063]     [    ] 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+20180703_10:18:05.275 [main] [27076]     [    ] Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/chenmin/Desktop/maven-repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/chenmin/Desktop/maven-repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcConversionService' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.format.support.FormattingConversionService]: Factory method 'mvcConversionService' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.profession.commons.beans.User
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.profession.ProfessionApplication.main(ProfessionApplication.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:527)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/chenmin/Desktop/maven-repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcConversionService' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.format.support.FormattingConversionService]: Factory method 'mvcConversionService' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.profession.commons.beans.User
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1180)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcConversionService' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.format.support.FormattingConversionService]: Factory method 'mvcConversionService' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.profession.commons.beans.User
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1180)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 42 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcConversionService' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.format.support.FormattingConversionService]: Factory method 'mvcConversionService' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.profession.commons.beans.User
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 58 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcConversionService' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.format.support.FormattingConversionService]: Factory method 'mvcConversionService' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.profession.commons.beans.User
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.obtainBeanInstanceFromFactory(ConfigurationClassEnhancer.java:389)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e029ced9.mvcConversionService(<generated>)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getInterceptors(WebMvcConfigurationSupport.java:304)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerMapping(WebMvcConfigurationSupport.java:260)
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerMapping(WebMvcAutoConfiguration.java:404)
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e029ced9.CGLIB$requestMappingHandlerMapping$1(<generated>)
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e029ced9$$FastClassBySpringCGLIB$$92e1e5be.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e029ced9.requestMappingHandlerMapping(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 59 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.format.support.FormattingConversionService]: Factory method 'mvcConversionService' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.profession.commons.beans.User
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 83 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.profession.commons.beans.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1086)
+	at org.springframework.data.repository.support.Repositories.cacheRepositoryFactory(Repositories.java:95)
+	at org.springframework.data.repository.support.Repositories.populateRepositoryFactoryInformation(Repositories.java:88)
+	at org.springframework.data.repository.support.Repositories.<init>(Repositories.java:81)
+	at org.springframework.data.repository.support.DomainClassConverter.setApplicationContext(DomainClassConverter.java:98)
+	at org.springframework.data.web.config.SpringDataWebConfiguration.addFormatters(SpringDataWebConfiguration.java:95)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addFormatters(WebMvcConfigurerComposite.java:80)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addFormatters(DelegatingWebMvcConfiguration.java:77)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.mvcConversionService(WebMvcConfigurationSupport.java:598)
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e029ced9.CGLIB$mvcConversionService$32(<generated>)
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e029ced9$$FastClassBySpringCGLIB$$92e1e5be.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e029ced9.mvcConversionService(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 84 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.profession.commons.beans.User
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 109 common frames omitted
+20180703_10:19:44.862 [main] [5342]     [    ] Starting ProfessionApplication on chenmindeMacBook-Air.local with PID 3087 (/Users/chenmin/projects/professionBoot/code/professionBoot/professionBoot-app/target/classes started by chenmin in /Users/chenmin/projects/professionBoot/code/professionBoot/professionBoot-app)
+20180703_10:19:44.891 [main] [5371]     [    ] The following profiles are active: prod
+20180703_10:19:45.371 [main] [5851]     [    ] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68a1104a: startup date [Tue Jul 03 10:19:45 CST 2018]; root of context hierarchy
+20180703_10:19:52.016 [main] [12496]     [    ] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8eb5c600] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20180703_10:19:53.443 [main] [13923]     [    ] Tomcat initialized with port(s): 8081 (http)
+20180703_10:19:53.477 [main] [13957]     [    ] Starting service [Tomcat]
+20180703_10:19:53.479 [main] [13959]     [    ] Starting Servlet Engine: Apache Tomcat/8.5.23
+20180703_10:19:54.795 [localhost-startStop-1] [15275]     [    ] Initializing Spring embedded WebApplicationContext
+20180703_10:19:54.798 [localhost-startStop-1] [15278]     [    ] Root WebApplicationContext: initialization completed in 9427 ms
+20180703_10:19:55.940 [localhost-startStop-1] [16420]     [    ] Mapping servlet: 'statViewServlet' to [/druid/*]
+20180703_10:19:55.951 [localhost-startStop-1] [16431]     [    ] Mapping servlet: 'dispatcherServlet' to [/]
+20180703_10:19:55.962 [localhost-startStop-1] [16442]     [    ] Mapping filter: 'metricsFilter' to: [/*]
+20180703_10:19:55.963 [localhost-startStop-1] [16443]     [    ] Mapping filter: 'characterEncodingFilter' to: [/*]
+20180703_10:19:55.963 [localhost-startStop-1] [16443]     [    ] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20180703_10:19:55.963 [localhost-startStop-1] [16443]     [    ] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20180703_10:19:55.963 [localhost-startStop-1] [16443]     [    ] Mapping filter: 'requestContextFilter' to: [/*]
+20180703_10:19:55.964 [localhost-startStop-1] [16444]     [    ] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+20180703_10:19:55.964 [localhost-startStop-1] [16444]     [    ] Mapping filter: 'webStatFilter' to urls: [/*]
+20180703_10:19:55.966 [localhost-startStop-1] [16446]     [    ] Mapping filter: 'applicationContextIdFilter' to: [/*]
+20180703_10:19:57.320 [main] [17800]     [    ] load filter error, filter not found : static
+20180703_10:20:01.460 [main] [21940]     [    ] {dataSource-1} inited
+20180703_10:20:01.729 [main] [22209]     [    ] Building JPA container EntityManagerFactory for persistence unit 'default'
+20180703_10:20:01.807 [main] [22287]     [    ] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20180703_10:20:02.298 [main] [22778]     [    ] HHH000412: Hibernate Core {5.0.12.Final}
+20180703_10:20:02.304 [main] [22784]     [    ] HHH000206: hibernate.properties not found
+20180703_10:20:02.310 [main] [22790]     [    ] HHH000021: Bytecode provider name : javassist
+20180703_10:20:02.509 [main] [22989]     [    ] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20180703_10:20:03.148 [main] [23628]     [    ] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20180703_10:20:05.046 [main] [25526]     [    ] HHH000228: Running hbm2ddl schema update
+20180703_10:20:07.328 [main] [27808]     [    ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+20180703_10:20:10.072 [main] [30552]     [    ] Mapped "{[/test/hello],methods=[POST]}" onto public java.lang.Object com.profession.modules.test.controller.TestController.hello(com.profession.commons.beans.User)
+20180703_10:20:10.079 [main] [30559]     [    ] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+20180703_10:20:10.081 [main] [30561]     [    ] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+20180703_10:20:10.083 [main] [30563]     [    ] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+20180703_10:20:10.091 [main] [30571]     [    ] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20180703_10:20:10.093 [main] [30573]     [    ] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20180703_10:20:10.768 [main] [31248]     [    ] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+20180703_10:20:10.775 [main] [31255]     [    ] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20180703_10:20:10.776 [main] [31256]     [    ] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20180703_10:20:10.779 [main] [31259]     [    ] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+20180703_10:20:10.780 [main] [31260]     [    ] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20180703_10:20:10.784 [main] [31264]     [    ] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+20180703_10:20:10.785 [main] [31265]     [    ] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20180703_10:20:10.788 [main] [31268]     [    ] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20180703_10:20:10.790 [main] [31270]     [    ] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20180703_10:20:10.792 [main] [31272]     [    ] Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+20180703_10:20:10.794 [main] [31274]     [    ] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+20180703_10:20:10.797 [main] [31277]     [    ] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+20180703_10:20:10.798 [main] [31278]     [    ] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20180703_10:20:10.799 [main] [31279]     [    ] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20180703_10:20:10.802 [main] [31282]     [    ] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+20180703_10:20:10.803 [main] [31283]     [    ] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+20180703_10:20:10.804 [main] [31284]     [    ] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20180703_10:20:10.806 [main] [31286]     [    ] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20180703_10:20:11.457 [main] [31937]     [    ] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+20180703_10:20:12.590 [main] [33070]     [    ] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68a1104a: startup date [Tue Jul 03 10:19:45 CST 2018]; root of context hierarchy
+20180703_10:20:12.770 [main] [33250]     [    ] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20180703_10:20:12.771 [main] [33251]     [    ] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20180703_10:20:12.867 [main] [33347]     [    ] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20180703_10:20:14.406 [main] [34886]     [    ] Registering beans for JMX exposure on startup
+20180703_10:20:14.409 [main] [34889]     [    ] Bean with name 'dataSource' has been autodetected for JMX exposure
+20180703_10:20:14.410 [main] [34890]     [    ] Bean with name 'logfilterRegistrationBean' has been autodetected for JMX exposure
+20180703_10:20:14.422 [main] [34902]     [    ] Located MBean 'logfilterRegistrationBean': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=logfilterRegistrationBean,type=Log4jFilter]
+20180703_10:20:14.425 [main] [34905]     [    ] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+20180703_10:20:14.441 [main] [34921]     [    ] Starting beans in phase 0
+20180703_10:20:14.557 [main] [35037]     [    ] Starting beans in phase 2147483647
+20180703_10:20:14.558 [main] [35038]     [    ] Context refreshed
+20180703_10:20:14.672 [main] [35152]     [    ] Found 1 custom documentation plugin(s)
+20180703_10:20:14.825 [main] [35305]     [    ] Scanning for api listing references
+20180703_10:20:15.138 [main] [35618]     [    ] Tomcat started on port(s): 8081 (http)
+20180703_10:20:15.151 [main] [35631]     [    ] Started ProfessionApplication in 34.975 seconds (JVM running for 51.911)
+20180703_10:20:49.077 [http-nio-8081-exec-1] [69557]     [    ] Initializing Spring FrameworkServlet 'dispatcherServlet'
+20180703_10:20:49.080 [http-nio-8081-exec-1] [69560]     [    ] FrameworkServlet 'dispatcherServlet': initialization started
+20180703_10:20:49.166 [http-nio-8081-exec-1] [69646]     [    ] FrameworkServlet 'dispatcherServlet': initialization completed in 74 ms
+20180703_10:20:49.358 [http-nio-8081-exec-1] [69838]     [    ] Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Object com.profession.modules.test.controller.TestController.hello(com.profession.commons.beans.User)
+20180703_10:21:39.741 [http-nio-8081-exec-2] [120221]     [    ] Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Object com.profession.modules.test.controller.TestController.hello(com.profession.commons.beans.User)

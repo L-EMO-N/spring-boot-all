@@ -1,0 +1,1 @@
+spring:  datasource:    url: jdbc:mysql://120.25.162.182:3366/zhiyinguan    username: root    password: 1315209639abcdlogging:  level:    com:      ultrapower:        mapper: INFO

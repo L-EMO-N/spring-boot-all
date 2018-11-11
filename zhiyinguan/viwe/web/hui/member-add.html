@@ -1,0 +1,226 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="Bookmark" href="favicon.ico" >
+<link rel="Shortcut Icon" href="favicon.ico" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/common.css">
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script><![endif]-->
+<!--/meta 作为公共模版分离出去-->
+
+<title>添加用户 - H-ui.admin v3.0</title>
+<meta name="keywords" content="H-ui.admin v3.0,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
+<meta name="description" content="H-ui.admin v3.0，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
+</head>
+<body>
+
+
+
+<section class="">
+	<div class="Hui-article">
+		<article class="cl pd-20">
+			<form class="form form-horizontal">
+			<div class="mt-20">
+				<table class="table table-border  table-hover table-bg ">
+					<thead>
+					<tr class="text-c">
+
+						<th width="60"></th>
+						<th></th>
+						<th  colspan="3"></th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr class="text-c">
+						<td  class="text-r">
+							<i class="avatar size-XXL "><img alt="" src="static/h-ui/images/ucnter/avatar-default.jpg"></i></td>
+						<td class="text-l">
+							<h3>首席财务官</h3>
+							<p >三年工作平均薪资（元/月)
+								<!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+								<label class="c-999 f-12" style="padding-left: 20px">一线 <input type="text"  class="input-com">
+									vs  本地
+									<input type="text"  class="input-com">
+								</label>
+							</p>
+							<!--<div class="c-999 f-12">
+								一线 12313213132  vs  本地 43231 </div>-->
+							<p>需求量（人） <label class="c-999 f-12" style="padding-left: 60px">
+								社会 <input type="text"  class="input-com">
+								vs  本地 <input type="text"  class="input-com">
+							</label></p>
+						</td>
+
+						<td class="td-manage" colspan="3" ></td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="row cl">
+					<!--<label class="form-label col-xs-4 col-sm-3"></label>-->
+					<div><b>各地需求：</b> <span class="select-box-overried">
+					<select class="select-overried" size="1" name="city" id="city" onchange="putValue(this)">
+						<option value="" selected>请选择城市</option>
+						<option value="1" alt="北京" url="com">北京</option>
+						<option value="2" alt="上海" url="cn">上海</option>
+						<option value="3" alt="广州" url="cc">广州</option>
+					</select>
+					</span>
+						<span>需求量:<input type="text" class="input-com" onblur="numReg(this)">     平均工资：<input type="text" class="input-com"></span>
+					</div>
+				</div>
+				<br/>
+				<div class="row cl">
+					<label>名词解释：</label>
+					<div class="formControls">
+						<textarea name="beizhu" cols="" rows="" class="textarea"  maxlength="1500" placeholder="名词解释" onKeyUp="textarealength(this,1500)">
+
+						</textarea>
+						<p class="textarea-numberbar"><em class="textarea-length">0</em>/1500</p>
+					</div>
+				</div>
+
+				<div class="row cl">
+					<label>职位内容：</label>
+					<div class="formControls">
+						<textarea name="beizhu" cols="" rows=""   maxlength="3000" class="textarea"  placeholder="职位内容" onKeyUp="textarealength(this,3000)"></textarea>
+						<p class="textarea-numberbar"><em class="textarea-length">0</em>/3000</p>
+					</div>
+				</div>
+
+				<div class="row cl">
+					<label>职位要求：</label>
+					<div class="formControls">
+						<textarea name="beizhu" cols="" rows="" class="textarea"   maxlength="500" placeholder="职位要求" onKeyUp="textarealength(this,500)"></textarea>
+						<p class="textarea-numberbar"><em class="textarea-length">0</em>/500</p>
+					</div>
+				</div>
+				<div class="row cl">
+					<label>晋升空间：</label>
+					<div class="formControls">
+						<textarea name="beizhu" cols="" rows="" class="textarea"  maxlength="500" placeholder="晋升空间" onKeyUp="textarealength(this,500)"></textarea>
+						<p class="textarea-numberbar"><em class="textarea-length">0</em>/500</p>
+					</div>
+				</div>
+
+
+			</div>
+			</form>
+		</article>
+
+	</div>
+</section>
+
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.page.js"></script>
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/messages_zh.js"></script> 
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	
+	$("#form-member-add").validate({
+		rules:{
+			username:{
+				required:true,
+				minlength:2,
+				maxlength:16
+			},
+			sex:{
+				required:true,
+			},
+			mobile:{
+				required:true,
+				isMobile:true,
+			},
+			email:{
+				required:true,
+				email:true,
+			},
+			uploadfile:{
+				required:true,
+			},
+			
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+			$(form).ajaxSubmit();
+			var index = parent.layer.getFrameIndex(window.name);
+			parent.$('.btn-refresh').click();
+			parent.layer.close(index);
+		}
+	});
+});
+/**
+ * 验证textarea输入框字数限制,只作提示不作提交限制
+ * 参考：<em class="textarea-length">0</em>/<am>100</am>
+ * @param obj
+ * @constructor
+ */
+var textarealength = function (obj,maxLength){
+    var html = $(obj).parent();
+//    var tatal = html.find('am').html();
+    var sets = $(obj).val().length;
+
+    if(sets*1>maxLength*1){
+        var str = '<div style="width: auto;position: absolute; right: 4%;color: red;">内容超出限制</div>';
+        $(obj).after(str);
+        html.find('em').css({color:'red'});
+    }else {
+		console.log($(obj).parent().find('div'));
+        $(obj).parent().find('div').remove();
+        html.find('em').css({color:'black'});
+    }
+    //设置已输入数量
+    html.find('em').html(sets);
+}
+
+function numReg(obj){
+    var reg =/^[1-9]\d*$/;
+    var value = $(obj).val();
+}
+
+function  putValue(obj) {
+	console.log("change!!");
+	console.log($("#city option:selected"));
+	var value = $(obj).val();
+	var alt = $("#city option:selected").attr("alt");
+	var url = $("#city option:selected").attr("url");
+	console.log(value);
+	console.log(alt);
+	console.log(url)
+}
+</script> 
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

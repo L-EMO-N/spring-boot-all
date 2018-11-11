@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.profession.commons.mapper.HotListMapper">
+
+    <select id="queryHotList" parameterType="CommunityQueryCriteria" resultType="HotList">
+        select list.id ,list.user_id,list.content,list.is_top,list.comment,list.likes,list.collect,list.create_time from (
+        select dy.id ,dy.user_id,dy.content,dy.is_top,dy.create_time,
+        (select COUNT(1) from dynamic_comment dc where dy.id=dc.dynamic_id) AS comment ,
+        (select COUNT(1) from dynamic_praise dp where dy.id=dp.dynamic_id) AS likes ,
+        (select COUNT(1) from user_collect_dynamic ucd where dy.id=ucd.dynamic_id) AS collect
+        from dynamic dy  where dy.is_delete='0'
+        <if test="start_time!=null and start_time!=''">
+            and dy.create_time &gt;= #{start_time,jdbcType=DATE}
+        </if>
+        <if test="end_time!=null and end_time!=''">
+            and dy.create_time  &lt;= #{end_time,jdbcType=DATE}
+        </if>
+        union all
+        select q.id ,q.user_id,q.content,q.is_top,q.create_time ,
+        (select COUNT(1) from qa_comment qc where q.id=qc.qa_id) AS comment ,
+        (select COUNT(1) from qa_praise qp where q.id=qp.qa_id) AS likes ,
+        (select COUNT(1) from user_collect_qa ucq where q.id=ucq.qa_id) AS collect
+        from qa q where q.is_delete='0'
+        <if test="start_time!=null and start_time!=''">
+            and q.create_time  &gt;= #{start_time,jdbcType=DATE}
+        </if>
+        <if test="end_time!=null and end_time!=''">
+            and q.create_time &lt;= #{end_time,jdbcType=DATE}
+        </if>
+        ) list
+        <if test="sort_type!=null and sort_type!=''">
+            ORDER BY  #{sort_type} desc
+        </if>
+            ORDER BY list.is_top desc
+        <if test="show_num!=null and show_num!=''">
+            limit  #{show_num,jdbcType=INTEGER}
+        </if>
+    </select>
+
+
+
+
+</mapper>
