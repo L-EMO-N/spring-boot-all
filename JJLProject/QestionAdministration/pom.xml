@@ -151,7 +151,7 @@
               </configuration>
           </plugin>
         
-        <!--用jar包发布时 确定mainClass 同时将依赖jar包打入到jar包  ---start>
+        <!--用jar包发布时 确定mainClass 同时将依赖jar包打入到jar包  ---start -->
         <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -174,7 +174,7 @@
                 </executions>
             </plugin>-->
         
-        <!--用jar包发布时 确定mainClass 同时将依赖jar包打入到jar包  ---end>
+        <!--用jar包发布时 确定mainClass 同时将依赖jar包打入到jar包  ---end -->
       </plugins>
   </build>
 </project>
