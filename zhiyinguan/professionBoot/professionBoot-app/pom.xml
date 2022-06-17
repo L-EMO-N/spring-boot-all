@@ -127,7 +127,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.41</version>
+            <version>1.2.83</version>
         </dependency>
 
         <!-- lombok项目是一个java库，会自动处理代码的编译，比如你不用写getter方法，它就会自动帮你实现 -->
